@@ -35,17 +35,7 @@ export default {
     return {
       
       colors: [
-        { id: 1, eng: 'vim', code: '#DC9FB4', name: 'vim', eva: 'vim教程:http://www2.geog.ucl.ac.uk/~plewis/teaching/unix/vimtutor',isPlayed: false },
-        { id: 2, eng: 'gdb', code: '#E16BCC', name: 'gdb', eva: '100个gdb技巧 https://github.com/hellogcc/100-gdb-tips' ,isPlayed: false },
-        { id: 3, eng: 'CLR', code: '#E16BCC', name: 'CLR', eva: '一边编译一边运行 大神的jit笔记 https://gist.github.com/303248153/2ca436a0e44e5da1c711de050fa3c13f ' ,isPlayed: false },
-        { id: 4, eng: 'csharp', code: '#E16BCC', name: 'C#', eva: '在线csharp网页  https://sharplab.io/' ,isPlayed: false },
-        { id: 5, eng: 'Makefile', code: '#E16BCC', name: 'Makefile', eva: 'utils.o : utils.c defs.h 写makefile教程：https://seisman.github.io/how-to-write-makefile/recipes.html' ,isPlayed: false },
-        { id: 6, eng: '汇编教程', code: '#E16BCC', name: 'ARM', eva: ' mov  x0, xzr asm(arm)教程：https://github.com/pkivolowitz/asm_book' ,isPlayed: false },
-        { id: 7, eng: '现代硬件的算法', code: '#F18C18', name: 'Algorithms for Modern Hardware', eva: ' https://en.algorithmica.org/hpc/' ,isPlayed: false },
-        { id: 8, eng: 'Hello算法', code: '#FDA4A4', name: '', eva: '二叉树：https://www.hello-algo.com/chapter_tree/binary_tree/' ,isPlayed: false },
-        { id: 9, eng: 'git', code: '#F59898', name: '', eva: 'git stash pop git stash drop list' ,isPlayed: false },
-        { id: 10, eng: 'CMAKE', code: '#F59898', name: '', eva: '' ,isPlayed: false },
-        { id: 11, eng: 'awk grep sed ', code: '#F59898', name: '', eva: '打印文件的第一列：awk \'{print $1}\' file.txt;替换文件中的字符串：sed \'s/old/new/g\' file.txt' ,isPlayed: false },
+        { id: 1, eng: 'LMM', code: '#DC9FB4', name: 'Large language model', eva: '大语言模型 (英语：large language model，LLM) 是一种语言模型',isPlayed: false },
       ],
       selectedColor: null,
       selectedName: null,

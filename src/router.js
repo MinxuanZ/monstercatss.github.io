@@ -7,7 +7,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'GameList',
+      name: 'GdbList',
       component: GameList
     },
     {
@@ -17,8 +17,8 @@ const router = createRouter({
     },
     // 其他路由项...
     {
-      path: '/gdb',
-      name: 'GdbList',
+      path: '/game',
+      name: 'GameList',
       component: GdbList
     }
   ]
