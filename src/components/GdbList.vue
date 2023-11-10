@@ -7,9 +7,9 @@
       <p v-else class="beng-text">linux-gdb</p>  
       <p v-if="selectedColor" class="eva-text" >{{ selectedEva }}</p>
       <p v-else class="eva-text"  ></p>
-      <router-link to="/" class="btip">🎮</router-link>
+      <router-link to="/game" class="btip">🎮</router-link>
       <router-link to="/book" class="tip1">📖</router-link>
-      <router-link to="/gdb" class="gtip2">🖥️</router-link>
+      <router-link to="/" class="gtip2">🖥️</router-link>
      
     </div>
    
@@ -30,12 +30,15 @@
 
 export default {
   
-  name: 'GameList',
+  name: 'GdbList',
   data() {
     return {
       
       colors: [
         { id: 1, eng: 'LMM', code: '#DC9FB4', name: 'Large language model', eva: '大语言模型 (英语：large language model，LLM) 是一种语言模型',isPlayed: false },
+        { id: 2, eng: 'lsp', code: '#DC9FB4', name: 'Language Server Protocol', eva: 'LSP 是一套通信协议，遵从 LSP 规范的客户端（各种编辑器/IDE）可以通过众多 LSP 服务端按协议标准进行通信',isPlayed: false },
+        { id: 3, eng: 'dom', code: '#DC9FB4', name:' Document Object Model',eva: '对象模型 (DOM) 是 Web 文档的编程接口',isPlayed: false },
+        { id: 4, eng: 'jit', code: '#DC9FB4', name:' Just In Time Compilation',eva: '即时编译，c# ,java',isPlayed: false },
       ],
       selectedColor: null,
       selectedName: null,

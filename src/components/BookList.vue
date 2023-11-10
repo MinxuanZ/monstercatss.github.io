@@ -7,9 +7,9 @@
         <p v-else class="beng-text">BOOOOK</p>  
         <p v-if="selectedColor" class="eva-text">{{ selectedEva }}</p>
         <p v-else class="eva-text"></p>
-        <router-link to="/" class="btip">🎮</router-link>
+        <router-link to="/game" class="btip">🎮</router-link>
         <router-link to="/book" class="btip1">📖</router-link>
-        <router-link to="/gdb" class="tip2">🖥️</router-link>
+        <router-link to="/" class="tip2">🖥️</router-link>
        
       </div>
      
@@ -30,7 +30,7 @@
   
   export default {
     
-    name: 'GameList',
+    name: 'BookList',
     data() {
       return {
         colors: [

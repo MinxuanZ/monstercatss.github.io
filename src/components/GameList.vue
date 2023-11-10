@@ -7,10 +7,10 @@
       <p v-else class="eng-text">DAISHEN GAME</p>  
       <p v-if="selectedColor" class="eva-text">{{ selectedEva }}</p>
       <p v-else class="eva-text">💩💩💩💩💩💩💩💩</p>
-      <router-link to="/" class="tip">🎮</router-link>
+      <router-link to="/game" class="tip">🎮</router-link>
       <router-link to="/book" class="tip1">📖</router-link>
-      <router-link to="/gdb" class="tip2">🖥️</router-link>
-      <img src="../assets/2224.jpg" alt="" class="img-app">
+      <router-link to="/" class="tip2">🖥️</router-link>
+     
     </div>
   
     <div class="color-list">
@@ -97,23 +97,22 @@ export default {
         { id: 61, eng: '帕特里克的套箱', code: '#DBF3FF', name: 'Patrick‘s parabox', eva: '硬核解谜游戏，据说非常硬   ' ,isPlayed: false},
         { id: 62, eng: '奇妙探险队1,2', code: '#D8F2FF', name: 'Pikmin 1, 2 ', eva: '探险模拟游戏，有独特的色子系统   ' ,isPlayed: false},
         { id: 63, eng: '最后的咒语', code: '#D5F1FF', name: 'The Last Spell', eva: 'roguelite，rpg，策略   ' ,isPlayed: false},
-        { id: 64, eng: '皇帝成长计划', code: '#D2F0FF', name: '', eva: '4399    ' ,isPlayed: false},
-        { id: 65, eng: '经典马里奥', code: '#CCF0FF', name: 'Mario', eva: '😭   ' ,isPlayed: false},
-        { id: 66, eng: 'i wanna ', code: '#CFF0FF', name: 'i wanna', eva: '硬核横版冒险游戏，慎入   ' ,isPlayed: false},
-        { id: 67, eng: '猫里奥', code: '#C9EFFF', name: 'Cat Mario', eva: '哈哈   ' ,isPlayed: false},
-        { id: 68, eng: '杀手2', code: '#C6EFFF', name: 'Hitman 2 ', eva: ' 😭    ' ,isPlayed: false},
-        { id: 69, eng: '狂父重置版', code: '#C3EFFF', name: 'The Beginners Guide', eva: '恐怖文字游戏   ' ,isPlayed: false},
-        { id: 70, eng: '魔女之家', code: '#C0EEFF', name:' House in Fata Morgana', eva: '😭   ' ,isPlayed: false},
-        { id: 71, eng: '奥德赛', code: '#BDEEFF', name: 'Odyssey', eva: '没玩过   ' ,isPlayed: false},
-        { id: 72, eng: '僵尸毁灭工程', code: '#BAEEFF', name: 'Project Zomboid', eva: '俯视视角末日角色扮演，可以联机   ' ,isPlayed: false},
-        { id: 73, eng: 'GMOD', code: '#B7EDFF', name: 'Garrys Mod', eva: '？？？   ' ,isPlayed: false},
-        { id: 74, eng: '地牢战争', code: '#B4EDFF', name: 'Dungeon Warfare', eva: '一眼肉鸽   ' ,isPlayed: false},
-        { id: 75, eng: '监狱建造师', code: '#B1ECFF', name: 'Prison Architect', eva: '很好玩的模拟经营游戏，以王老菊“自由开火”最为出名   ' ,isPlayed: false},
-        { id: 76, eng: '暖雪', code: '#AEECFF', name: 'xxx', eva: '高难度肉鸽）   ' ,isPlayed: false},
-        { id: 78, eng: '蝙蝠侠三部曲', code: '#ABECFF', name: 'Batman: Arkham Trilogy', eva: '剧情向   ' ,isPlayed: false},
-        { id: 79, eng: 'hifi-rush', code: '#A8EBFF', name: 'HiFi-Rush', eva: '貌似是今年新出的节奏游戏？是音游吗？听说画面鲜艳明亮   ' ,isPlayed: false},
-        { id: 80, eng: '高楼爆破', code: '#A5EBFF', name: 'Blast Corps', eva: '童年   ' ,isPlayed: false},
-        { id: 81, eng: '十字军之王3', code: '#A2EBFF', name: '', eva: 'rgb   ' ,isPlayed: false},
+        { id: 64, eng: '经典马里奥', code: '#CCF0FF', name: 'Mario', eva: '😭   ' ,isPlayed: false},
+        { id: 65, eng: 'i wanna ', code: '#CFF0FF', name: 'i wanna', eva: '硬核横版冒险游戏，慎入   ' ,isPlayed: false},
+        { id: 66, eng: '猫里奥', code: '#C9EFFF', name: 'Cat Mario', eva: '哈哈   ' ,isPlayed: false},
+        { id: 67, eng: '杀手2', code: '#C6EFFF', name: 'Hitman 2 ', eva: ' 😭    ' ,isPlayed: false},
+        { id: 68, eng: '狂父重置版', code: '#C3EFFF', name: 'The Beginners Guide', eva: '恐怖文字游戏   ' ,isPlayed: false},
+        { id: 69, eng: '魔女之家', code: '#C0EEFF', name:' House in Fata Morgana', eva: '😭   ' ,isPlayed: false},
+        { id: 70, eng: '奥德赛', code: '#BDEEFF', name: 'Odyssey', eva: '没玩过   ' ,isPlayed: false},
+        { id: 71, eng: '僵尸毁灭工程', code: '#BAEEFF', name: 'Project Zomboid', eva: '俯视视角末日角色扮演，可以联机   ' ,isPlayed: false},
+        { id: 72, eng: 'GMOD', code: '#B7EDFF', name: 'Garrys Mod', eva: '？？？   ' ,isPlayed: false},
+        { id: 73, eng: '地牢战争', code: '#B4EDFF', name: 'Dungeon Warfare', eva: '一眼肉鸽   ' ,isPlayed: false},
+        { id: 74, eng: '监狱建造师', code: '#B1ECFF', name: 'Prison Architect', eva: '很好玩的模拟经营游戏，以王老菊“自由开火”最为出名   ' ,isPlayed: false},
+        { id: 75, eng: '暖雪', code: '#AEECFF', name: 'xxx', eva: '高难度肉鸽）   ' ,isPlayed: false},
+        { id: 76, eng: '蝙蝠侠三部曲', code: '#ABECFF', name: 'Batman: Arkham Trilogy', eva: '剧情向   ' ,isPlayed: false},
+        { id: 77, eng: 'hifi-rush', code: '#A8EBFF', name: 'HiFi-Rush', eva: '貌似是今年新出的节奏游戏？是音游吗？听说画面鲜艳明亮   ' ,isPlayed: false},
+        { id: 78, eng: '高楼爆破', code: '#A5EBFF', name: 'Blast Corps', eva: '童年   ' ,isPlayed: false},
+        { id: 79, eng: '十字军之王3', code: '#A2EBFF', name: '', eva: 'rgb   ' ,isPlayed: false},
       ],
       selectedColor: null,
       selectedName: null,
